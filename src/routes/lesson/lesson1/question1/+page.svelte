@@ -1,11 +1,11 @@
 <html lang="">
-	<body>
+	<body class="max-w-6xl mx-auto">
 		<div class="flex justify-center mt-12">
 			<h1 class=" text-6xl text-center font-semibold">
 				How many quarter notes make up a whole note?
 			</h1>
 		</div>
-		<ul class="w-full mt-12 grid grid-cols-2 gap-4 flex justify-center" id="ull">
+		<ul class="mt-12 grid grid-cols-2 gap-4 flex justify-center items-center" id="ull">
 			<li>
 				<div class="flex items-center">
 					<input id="q1" type="radio" value="" name="question" class="hidden peer required" />
@@ -21,7 +21,7 @@
 					<input id="q2" type="radio" value="" name="question" class="hidden peer required" />
 					<label
 						for="q2"
-						class="w-full border-2 ring-4 ring-transparent border-transparent bg-clip-border bg-sky-400 rounded-md h-12 hover:ring-sky-200 hover:outline-none peer-checked:ring-sky-200 text-center text-4xl text-white"
+						class=" w-full border-2 ring-4 ring-transparent border-transparent bg-clip-border bg-sky-400 rounded-md h-12 hover:ring-sky-200 hover:outline-none peer-checked:ring-sky-200 text-center text-4xl text-white"
 						>4</label
 					>
 				</div>
