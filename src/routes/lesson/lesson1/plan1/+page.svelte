@@ -12,7 +12,7 @@
 
    <div class="  flex-auto text-2xl text-bold font-mono rounded  bg-slate-  hover:bg-slate- mt-3 divide-violet-600 flex-auto     " >Hello there our friend welcome to our first lesson. Today we are going to learn about notes. You may have heard about notes, but do you know what they are used for. We can compare the importance of notes in music to that of letters in languages. How would you be able to read this if you didn’t know the letters, so let’s learn about notes</div>
    
-<div class="  h-[280px] w-[]  mt-16 grid grid-flow-col gap-4  flex-auto bg-slate-400   p-2   ">
+<div class="  h-[280px] w-[]  mt-16 grid grid-flow-col gap-4  flex-auto bg-blue-500   p-2   ">
 
   <div class="bg-slate-100 rounded-lg text-center items-center ">
     <span class="text-center text-2xl font-bold font-mono pt    ">Whole note</span>
