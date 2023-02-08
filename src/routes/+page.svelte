@@ -9,8 +9,8 @@
     </div>
   </div>
   <div class="justify-center flex w-full mt-4">
-    <button class="text-2xl border rounded-xl border-indigo-600 bg-indigo-600 text-white bg-clip-border shadow-lg hover:shadow-indigo-600 hover:border-white hover:bg-white hover:text-black w-56 h-16">
-      Coming soon!
+    <button  class="text-2xl border rounded-xl border-indigo-600 bg-indigo-600 text-white bg-clip-border shadow-lg hover:shadow-indigo-600 hover:border-white hover:bg-white hover:text-black w-56 h-16">
+      <a href="/lessons">Start Learning Now!</a>
     </button>
   </div>
 </html>

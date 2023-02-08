@@ -1,18 +1,18 @@
 <div class="justify-center w-full flex ">
-	<span class="justify-center text-center text-6xl text-gray-900 underline decoration-sky-500/30"
+	<span class="font-bold justify-center text-center text-6xl text-gray-900 decoration-sky-500/30"
 		>Our team</span
 	>
 </div>
-<div class="justify-center w-full flex">
+<div class="justify-center w-full gap-8 grid grid-cols-2">
 	<div
-		class="h-64 w-full rounded-lg mt-32 bg-gray-100 border-slate-400 shadow-2xl shadow-blue-500/50 justify-center mr-4"
+		class="h-64 w-full rounded-lg mt-24 bg-gray-100 border-slate-400 shadow-2xl shadow-blue-500/50 hover:shadow-blue-500/75 justify-center mr-4"
 	>
-		<h1 class="font-semibold font-mono text-center text-lg text-blue-400">Mihail tenev</h1>
+		<h1 class="font-semibold font-mono text-center text-lg text-indigo-600">Mihail tenev</h1>
 		<h2 class="text-center text-md font-mono text-gray-400">Student</h2>
 		<div class="rounded-full ">
 			<img
 				class="w-24 h-24 rounded-full mx-auto justify-end "
-				src="prof1.png"
+				src="arw.jpg"
 				alt=""
 				width="384"
 				height="512 "
@@ -21,9 +21,9 @@
 		<p class="font-mono text-center">Hello There my Name is Mihail<br />...</p>
 	</div>
 	<div
-		class="h-64 w-full rounded-lg mt-32 bg-gray-100 border-slate-400 shadow-2xl shadow-blue-500/50 "
+		class="h-64 w-full rounded-lg mt-24 bg-gray-100 border-slate-400 shadow-2xl shadow-blue-500/50 hover:shadow-blue-500/75"
 	>
-		<h1 class="font-semibold font-mono text-center text-lg text-blue-400">Sali Ayvaz</h1>
+		<h1 class="font-semibold font-mono text-center text-lg text-indigo-600">Sali Ayvaz</h1>
 		<h2 class="text-center text-md font-mono text-gray-400">Student</h2>
 		<div class="rounded-full ">
 			<img
