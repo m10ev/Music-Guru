@@ -2,7 +2,7 @@
     import "../app.css";
     import Nav from "../components/nav.svelte"
   </script>
-  <body class="dark:bg-black w-full h-full"></body>
+  <body class="w-full h-full"></body>
   <div class="p-8 mw-auto mx-auto">
   <Nav/> 
   <slot></slot>
