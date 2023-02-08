@@ -1,5 +1,5 @@
 
-<html class="dark">
+<html class="">
   <div>
     <div class="justify-center flex w-full space-y-3">
       <h1 class="font-bold text-7xl text-center">Want to learn Music Theory?</h1>
