@@ -1,135 +1,85 @@
-<html
-	><nav class="mx-auto p-4 bg-blue h-20 items-center text-center rounded-full ">
-		<h1 class="text-[27px] font-mono ">
-			<span
-				class="text-white font-mono font-bold text-transparent bg-gradient-to-r bg-clip-text from-gray-600 to-red-400"
-				>Music Guru</span
-			>
-		</h1>
-	</nav>
-	<div class="justify-center bg-slate-300 rounded-lg ">
-		<h1 class="text-7xl text-center font-mono ">Lesson 1</h1>
-		<h2 class="text-center text-2xl font-mono font-semibold ">
-			<span class="text-blue-600">Notes</span>. Notes duration
-		</h2>
-	</div>
-	<div
-		class="flex-auto text-2xl text-bold font-mono rounded bg-slate-100 hover:bg-slate- mt-3 flex-auto "
-	>
-		Hello there our friend welcome to our first lesson. Today we are going to learn about notes. You
-		may have heard about notes, but do you know what they are used for. We can compare the
-		importance of notes in music to that of letters in languages. How would you be able to read this
-		if you didn’t know the letters, so let’s learn about notes
-	</div>
-
-	 <p class="mt-5 text-center text-2xl font-mono font-bold bg-slate-200 " >In music notes are a type of notation that mark the duration of sound (tones) and tones represent the pitch. The notes have duration that is measured with beats</p> 
-
-
-
-
-
-
-	<div class="h-[440px] w-[] mt-16 grid grid-flow-col gap-4 flex-auto mt-10      ">
-		<div class="bg-slate-100 rounded-lg text-center items-center shadow-inner hover:bg-slate-200  ">
-			<span class="text-center text-2xl font-bold font-mono pt "
-				>Whole <span class="text-blue-600">Note</span> <br /><br /><span
-					class="text-[18px] 2 font-bold font-mono text-gray-800"
-				>
-					The longest note is the whole note<br />it has the longest duration off all notes.</span
-				></span
-			>
-			<p class="text-[24px] text-red-600 font-mono font-bold ">4 beats</p>
-			<img
-				class="w-[60px] h-[60px] mt-20 ml-48    "
-				src="https://music-guru.vercel.app/whole.webp "
-				alt=""
-			/><br />
+<section class="text-gray-600 body-font">
+	<div class="container px-5 py-24 mx-auto ">
+	  <div class="flex flex-wrap w-full mb-20 ">
+		<div class="lg:w-1/2 w-full mb-6 lg:mb-0">
+		  <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">Lesson1.Notes and notes duration</h1>
+		  <div class="h-1 w-28     bg-indigo-500 rounded"></div>
 		</div>
-		<div
-			class="border- border-gray-500 bg-slate-100 text-center items-center rounded-lg shadow-inner hover:bg-slate-200 "
-		>
-			<span class="text-center text-2xl font-bold font-mono pt "
-				>Half <span class="text-blue-600">note</span> <br /><br />
-				<p class="text-[18px] 2 font-bold font-mono text-gray-800">
-					The half note has half the duration of a whole
-				</p>
-				<br />
-				<p class="text-[24px] text-red-600 font-mono font-bold ">2 beats</p>
-				<img
-					class="w-[140px] h-[140px] mt-20 ml-48  "
-					src="https://music-guru.vercel.app/half.webp "
-					alt=""
-				/>
-			</span>
+		<p class="lg:w-1/2 w-full leading-relaxed text-gray-500">Hello there our friend welcome to our first lesson. Today we are going to learn about notes. You
+			may have heard about notes, but do you know what they are used for. We can compare the
+			importance of notes in music to that of letters in languages. How would you be able to read this
+			if you didn’t know the letters, so let’s learn about notes.</p>
+	  </div>
+	  <p class="mb-20 text-2xl">In music notes are a type of notation that mark the duration of sound (tones) and tones represent the pitch. The notes have duration that is measured with beats</p>
+	  <div class="flex flex-wrap -m-4">
+		<div class="xl:w-1/4 md:w-1/2 p-4">
+		  <div class="bg-gray-100 p-6 rounded-lg">
+			<img class="h-20 w-auto rounded ml-14  object-cover object-center  mb-6" src="https://music-guru.vercel.app/whole.webp " alt="content">
+			<h2 class="text-lg text-gray-900 font-medium title-font   ">Whole note</h2>
+			<h3 class="tracking-widest text-indigo-500 text-md font-medium title-font mb-4">4 beats</h3>
+			
+			<p class="leading-relaxed text-base">The longest off al notes is the whole note</p>
+		  </div>
 		</div>
-		<div
-			class="bg-slate-100 rounded-lg text-center justify-center flex shadow-inner hover:bg-slate-200  "
-		>
-			<span class="text-center text-2xl font-bold font-mono pt items-center "
-				>Quater <span class="text-blue-600">Note </span> <br /><br />
-				<p class="text-[18px] 2 font-bold font-mono text-gray-800">
-					The quarter note is a fourth of a whole note
-				</p>
-				<br />
-				<p class="text-[24px] text-red-600 font-mono font-bold ">1 beat</p>
-				<img
-					class="w-[140px] h-[140px] mt-20 ml-44 "
-					src="https://music-guru.vercel.app/quater.webp "
-					alt=""
-				/>
-			</span>
+		<div class="xl:w-1/4 md:w-1/2 p-4">
+			<div class="bg-gray-100 p-6 rounded-lg">
+				<img class="h-20 w-auto rounded ml-14  object-cover object-center  mb-6" src="https://music-guru.vercel.app/half.webp " alt="content">
+				<h2 class="text-lg text-gray-900 font-medium title-font   ">Half note</h2>
+				<h3 class="tracking-widest text-indigo-500 text-md font-medium title-font mb-4">2 beats</h3>
+			<p class="leading-relaxed text-base">The half note has half the duration of a whole</p>
+		  </div>
 		</div>
-	</div>
-	<div class="h-[400px] w-[] mt-16 grid grid-flow-col gap-8 flex-auto pt-3  flex   ">
-		<div class="bg-slate-100 rounded-lg text-center items-center  shadow-inner hover:bg-slate-200 ">
-			<span class="text-center text-2xl font-bold font-mono pt "
-				>Eighth <span class="text-blue-600">Notes</span></span
-			><br />
-			<p class="text-[18px] 2 font-bold font-mono text-gray-800">
-				<br /> The quarter note is a fourth of a whole note
-			</p>
-			<br />
-			<p class="text-[24px] text-red-600 font-mono font-bold ">1/2 of a beat</p>
-			<img
-				class="w-[140px] h-[140px] mt-20 ml-60  "
-				src="https://music-guru.vercel.app/8th.webp "
-				alt=""
-			/>
+		<div class="xl:w-1/4 md:w-1/2 p-4">
+		  <div class="bg-gray-100 p-6 rounded-lg">
+			<img class="h-20 w-auto rounded ml-14  object-cover object-center  mb-6" src="https://music-guru.vercel.app/quater.webp " alt="content">
+			<h2 class="text-lg text-gray-900 font-medium title-font   ">Quater note</h2>
+			<h3 class="tracking-widest text-indigo-500 text-md font-medium title-font mb-4">1 beat</h3>
+			<p class="leading-relaxed text-base">The quarter note is a fourth of a whole note</p>
+		  </div>
 		</div>
-		<div class="bg-slate-100 rounded-lg text-center items-center  shadow-inner hover:bg-slate-200 ">
-			<span class="text-center text-2xl font-bold font-mono pt "
-				>Sixteenth <span class="text-blue-600">Note</span></span
-			><br />
-			<p class="text-[18px] 2 font-bold font-mono text-gray-800">
-				<br /> The quarter note is a fourth of a whole note
-			</p>
-			<br />
-			<p class="text-[24px] text-red-600 font-mono font-bold ">1/4 of a beat</p>
-			<img
-				class="w-[140px] h-[140px] mt-20 ml-60  "
-				src="https://music-guru.vercel.app/32th.webp "
-				alt=""
-			/>
+		<div class="xl:w-1/4 md:w-1/2 p-4">
+		  <div class="bg-gray-100 p-6 rounded-lg">
+			<img class="h-20 w-auto rounded ml-14  object-cover object-center  mb-6" src="https://music-guru.vercel.app/8th.webp " alt="content">
+			<h2 class="text-lg text-gray-900 font-medium title-font   ">Eighth note</h2>
+			<h3 class="tracking-widest text-indigo-500 text-md font-medium title-font mb-4">1/2 of a beat</h3>
+			<p class="leading-relaxed text-base"> The Eigth note is eighth of a whole note</p>
+		  </div>
+
+
 		</div>
-	</div>
+		<div class="xl:w-1/4 md:w-1/2 p-4">
+			<div class="bg-gray-100 p-6 rounded-lg">
+				<img class="h-20 w-auto rounded ml-14  object-cover object-center  mb-6" src="https://music-guru.vercel.app/32th.webp " alt="content">
+				<h2 class="text-lg text-gray-900 font-medium title-font   ">Sixteenth note</h2>
+				<h3 class="tracking-widest text-indigo-500 text-md font-medium title-font mb-4">1/4 of a beat</h3>
+			<p class="leading-relaxed text-base"> the Sixteenth note is a sixteenth of a whole note </p>
+		  </div>
+		</div>
+		<p class="  font-normal   text-gray-900  mt-4 text-[16,px]   ">
+		     Notes are measured with beats. Now you will see how to
+			use some math with notes, <br />
+			Whole note(4b.) = half note(2b.) + half note(2 b.) <br /> Half note(2b.) = quater note(1b.) +
+			quater note (1b.) <br /> Quater note(1b.) = eighth note(1/2b.) + eighth note(1/2b.) <br>
+			Another example is - Whole note(4b.) = Quater note(1b.) + Quater note(1b.) + Quater note(1b.) + Quater note(1b.) <br>
+			Every note with less duration than the quarter note has flags. <br> A flag halves the duration of a note. <br>
+
+			- An eight note has one flag. Therefore, two eight notes have the same duration as a quarter note. <br>
+			
+			 You can add more flags but these types of notes are not as regularly used.  
+		</p>
+         
+	
+		  
+		</div>
+		<div class="h-1 w-full bg-indigo-500 mt-6"></div>
+		<div>
+        <p class="text-center mt-3 font-semibold ">New Words</p>
+		<p> Note- notation mark in music representing duration of a sound<br>Duration- the length of time each note is played for <br>Beat- regulaly repeated rhythm(unit for duration) <br> Flag- an element of a note</p>
+        
 
 
-<div class="pt-8" >
-	<p class="text-2xl font-mono font-bold bg-slate-200">There are too many notes we can talk about. The logic is same. You just have to take the half duration of a note to find the new one. The line you see in Eighth and Sixteenth note is called a flag.</p>
-
-</div>
-
-
-
-
-
-
-
-	<p class="text-center flex font-mono  font-normal   text-2xl mt-12 font-semibold bg-gray-200     ">
-		The notes are measured with beats. You can choose your tempo for that. Now you will see how to
-		use some math with the notes <br />
-		Whole note(4b.)= half note(2b.)+ half note(2 b.) <br /> Half note(2b.)= quater note(1b.) +
-		quater note (1b.) <br /> Quater note(1b.)= eighth note(1/2b.) + eighth note(1/2b.) <br>
-		Another example is: Half note(4b.)= Quater note(1b.)+Quater note(1b.)+Quater note(1b.)+Quater note(1b.)
-	</p>
-</html>
+		</div>
+		
+	  </div>
+	
+</section>
