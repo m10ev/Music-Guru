@@ -165,13 +165,15 @@ export const actions = {
     //   console.log(data)
 
       const num = parseInt(data.get('num'));
-      const cor = parseInt(data.get('cor')) 
+      const cor = parseInt(data.get('cor'));
       return {count: num + 1, correct: cor};
     },
     finish: async ({ request }) => {
       const data = await request.formData();
       
-      throw redirect (301, 'finish')
+      const num = parseInt(data.get('num'));
+      const cor = parseInt(data.get('cor'));
+      return {finish: true, count: num, correct: cor};
     }
     
 };

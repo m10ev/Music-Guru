@@ -28,13 +28,51 @@
 	}
 
 	shuffle(data[count].options);
-
-	
+	console.log(count/100 * 50)
 </script>
 
 <html lang="">
 	<body class="max-w-6xl mx-auto">
 		<form method="POST" action="?/check">
+			{#if form?.finish}
+				{#if correct == count + 1}
+				    <h1 class="text-6xl font-semibold justify-center flex mt-6">Test Score</h1>
+					<div class="grid justify-center grid-cols-1 mt-12 border border-indigo-600 p-9 rounded-lg w-96x2">
+						<h1 class="justify-center text-center text-6xl font-semibold text-green-500">{correct}/{count + 1}</h1>
+						<p class="justifer-center text-center text-2xl ml-4 mr-4 p-4">Excellent. You are amazing!</p>
+						<a href="https://music-guru.vercel.app/lessons" class="justify-end rounded-2xl border text-center bg-indigo-600 border-indigo-600">
+							<p class="p-5 text-white font-semibold">Go to lessons page</p>
+						</a>
+					</div>
+				{:else if correct > count - (count/100 * 25) }
+				<h1 class="text-6xl font-semibold justify-center flex mt-6">Test Score</h1>
+				<div class="grid justify-center grid-cols-1 mt-12 border border-indigo-600 p-9 rounded-lg w-96x2">
+					<h1 class="justify-center text-center text-6xl font-semibold text-indigo-500">{correct}/{count + 1}</h1>
+					<p class="justifer-center text-center text-2xl ml-4 mr-4 p-4">Good Job! You are doing great.</p>
+					<a href="https://music-guru.vercel.app/lessons" class="justify-end rounded-2xl border text-center bg-indigo-600 border-indigo-600">
+						<p class="p-5 text-white font-semibold">Go to lessons page</p>
+					</a>
+				</div>
+				{:else if correct > count - (count/100 * 50)}
+				<h1 class="text-6xl font-semibold justify-center flex mt-6">Test Score</h1>
+				<div class="grid justify-center grid-cols-1 mt-12 border border-indigo-600 p-9 rounded-lg w-96x2">
+					<h1 class="justify-center text-center text-6xl font-semibold text-yellow-500">{correct}/{count + 1}</h1>
+					<p class="justifer-center text-center text-2xl ml-4 mr-4 p-4">Almost there. Keep practicing!</p>
+					<a href="https://music-guru.vercel.app/lessons" class="justify-end rounded-2xl border text-center bg-indigo-600 border-indigo-600">
+						<p class="p-5 text-white font-semibold">Go to lessons page</p>
+					</a>
+				</div>
+				{:else}
+				<h1 class="text-6xl font-semibold justify-center flex mt-6">Test Score</h1>
+				<div class="grid justify-center grid-cols-1 mt-12 border border-indigo-600 p-9 rounded-lg w-96x2">
+					<h1 class="justify-center text-center text-6xl font-semibold text-red-500">{correct}/{count + 1}</h1>
+					<p class="justifer-center text-center text-2xl ml-4 mr-4 p-4">Maybe read the lesson again.</p>
+					<a href="https://music-guru.vercel.app/lessons" class="justify-end rounded-2xl border text-center bg-indigo-600 border-indigo-600">
+						<p class="p-5 text-white font-semibold">Go to lessons page</p>
+					</a>
+				</div>
+				{/if}
+			{:else}
 			<div class="flex justify-center mt-12">
 				<h1 class=" text-6xl text-center font-semibold">
 					{data[count].question}
@@ -45,7 +83,7 @@
 			<input type="number" style="display: none;" bind:value={correct} name="cor" />
 			<p style="display: none;">{count < Object.keys(data).length - 1}</p>
 			<p style="display: none;">data:{Object.keys(data).length}</p>
-			<ul class="mt-12 grid grid-cols-2 gap-4 flex justify-center items-center" id="ull">
+			<ul class="mt-12 grid grid-cols-2 gap-4 justify-center items-center" id="ull">
 				<li>
 					<div class="flex items-center">
 						<input
@@ -172,6 +210,8 @@
 					{/if}
 				</div>
 			{/if}
+			{/if}
+			
 		</form>
 
 		<script>
