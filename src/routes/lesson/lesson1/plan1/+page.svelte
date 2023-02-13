@@ -1,6 +1,22 @@
 <script>
-    function play() {
-        var audio = document.getElementById("audio");
+    function whole() {
+        var audio = document.getElementById("wholeNote");
+        audio.play();
+		}
+    function half() {
+        var audio = document.getElementById("halfNote");
+        audio.play();
+	}
+	function quarter() {
+        var audio = document.getElementById("quarterNote");
+        audio.play();
+	}
+	function eighth() {
+        var audio = document.getElementById("eighthNote");
+        audio.play();
+	}
+	function sixteenth() {
+        var audio = document.getElementById("sixteenthNote");
         audio.play();
 	}
 </script>
@@ -19,7 +35,7 @@
 	  <p class="mb-20 text-2xl">In music notes are a type of notation that mark the duration of sound (tones) and tones represent the pitch. The notes have duration that is measured with beats</p>
 	  <div class="flex flex-wrap -m-4">
 		<div class="xl:w-1/4 md:w-1/2 p-4">
-		  <div class="bg-gray-100 p-6 rounded-lg h-72  w-[300px] hover:shadow-xl">
+		  <div on:click={whole} class="bg-gray-100 p-6 rounded-lg h-72  w-[300px] hover:shadow-xl">
 			<img class="h-20 w-auto rounded ml-14  object-cover object-center  mb-6" src="https://music-guru.vercel.app/whole.webp " alt="content">
 			<h2 class="text-lg text-gray-900 font-medium title-font   ">Whole note</h2>
 			<h3 class="tracking-widest text-indigo-500 text-md font-medium title-font mb-4">4 beats</h3>
@@ -28,7 +44,7 @@
 		  </div>
 		</div>
 		<div class="xl:w-1/4 md:w-1/2 p-4">
-			<div class="bg-gray-100 p-6 rounded-lg h-72 w-[300px] hover:shadow-xl">
+			<div on:click={half} class="bg-gray-100 p-6 rounded-lg h-72 w-[300px] hover:shadow-xl">
 				<img class="h-20 w-auto rounded ml-14  object-cover object-center  mb-6" src="https://music-guru.vercel.app/half.webp " alt="content">
 				<h2 class="text-lg text-gray-900 font-medium title-font   ">Half note</h2>
 				<h3 class="tracking-widest text-indigo-500 text-md font-medium title-font mb-4">2 beats</h3>
@@ -36,15 +52,15 @@
 		  </div>
 		</div>
 		<div class="xl:w-1/4 md:w-1/2 p-4">
-		  <div class="bg-gray-100 p-6 rounded-lg h-72 w-[300px] hover:shadow-xl" >
+		  <div on:click={quarter} class="bg-gray-100 p-6 rounded-lg h-72 w-[300px] hover:shadow-xl" >
 			<img class="h-20 w-auto rounded ml-14  object-cover object-center  mb-6" src="https://music-guru.vercel.app/quater.webp " alt="content">
-			<h2 class="text-lg text-gray-900 font-medium title-font   ">Quater note</h2>
+			<h2 class="text-lg text-gray-900 font-medium title-font   ">Quarter note</h2>
 			<h3 class="tracking-widest text-indigo-500 text-md font-medium title-font mb-4">1 beat</h3>
 			<p class="leading-relaxed text-base">The quarter note is a fourth of a whole note</p>
 		  </div>
 		</div>
 		<div class="xl:w-1/4 md:w-1/2 p-4">
-		  <div class="bg-gray-100 p-6 rounded-lg h-72 w-[300px] hover:shadow-xl">
+		  <div on:click={eighth} class="bg-gray-100 p-6 rounded-lg h-72 w-[300px] hover:shadow-xl">
 			<img class="h-20 w-auto rounded ml-14  object-cover object-center  mb-6" src="https://music-guru.vercel.app/8th.webp " alt="content">
 			<h2 class="text-lg text-gray-900 font-medium title-font   ">Eighth note</h2>
 			<h3 class="tracking-widest text-indigo-500 text-md font-medium title-font mb-4">1/2 of a beat</h3>
@@ -54,7 +70,7 @@
 
 		</div>
 		<div class="xl:w-1/4 md:w-1/2 p-4">
-			<div class="bg-gray-100 p-6 rounded-lg h-72 w-[300px] hover:shadow-xl">
+			<div on:click={sixteenth} class="bg-gray-100 p-6 rounded-lg h-72 w-[300px] hover:shadow-xl">
 				<img class="h-20 w-auto rounded ml-14  object-cover object-center  mb-6" src="https://music-guru.vercel.app/32th.webp " alt="content">
 				<h2 class="text-lg text-gray-900 font-medium title-font   ">Sixteenth note</h2>
 				<h3 class="tracking-widest text-indigo-500 text-md font-medium title-font mb-4">1/4 of a beat</h3>
@@ -64,9 +80,9 @@
 		<p class="  font-normal   text-gray-900  mt-4 text-[16,px]  ml-6   ">
 		     Notes are measured with beats. Now you will see how to
 			use some math with notes, <br />
-			Whole note(4b.) = half note(2b.) + half note(2 b.) <br /> Half note(2b.) = quater note(1b.) +
-			quater note (1b.) <br /> Quater note(1b.) = eighth note(1/2b.) + eighth note(1/2b.) <br>
-			Another example is - Whole note(4b.) = Quater note(1b.) + Quater note(1b.) + Quater note(1b.) + Quater note(1b.) <br>
+			Whole note(4b.) = half note(2b.) + half note(2 b.) <br /> Half note(2b.) = quarter note(1b.) +
+			quarter note (1b.) <br /> Quarter note(1b.) = eighth note(1/2b.) + eighth note(1/2b.) <br>
+			Another example is - Whole note(4b.) = Quarter note(1b.) + Quarter note(1b.) + Quarter note(1b.) + Quarter note(1b.) <br>
 			Every note with less duration than the quarter note has flags. <br> A flag halves the duration of a note. <br>
 
 			- An eight note has one flag. Therefore, two eight notes have the same duration as a quarter note. <br>
@@ -89,8 +105,8 @@
 	  </div>
 	
 </section>
-<audio id="whole" src=""></audio>
-<audio id="half" src=""></audio>
-<audio id="qarter" src=""></audio>
-<audio id="eighth" src=""></audio>
-<audio id="sixteenth" src=""></audio>
+<audio id="wholeNote" src="https://music-guru.vercel.app/audio/whole_note.ogg"></audio>
+<audio id="halfNote" src="https://music-guru.vercel.app/audio/half_note.ogg"></audio>
+<audio id="quarterNote" src="https://music-guru.vercel.app/audio/quarter_note.ogg"></audio>
+<audio id="eighthNote" src="https://music-guru.vercel.app/audio/eighth_note.ogg"></audio>
+<audio id="sixteenthNote" src="https://music-guru.vercel.app/audio/sixteenth.ogg"></audio>
