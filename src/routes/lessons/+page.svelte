@@ -9,8 +9,8 @@
             <h1 class="text-6xl text-center font-bold">Notes and Tones</h1>
             <div on:click={showI}>
                 <a href="" class="relative block -m-6 p-6 rounded-lg">
-                <img class="ml-40 mt-4 " src="lesson1icon.jpg" width="150" height="150">
-                <p class="mt-4 text-center font-bold">Notes I</p>
+                <img class="mt-4 ml-40 justify-center flex w-[150px] h-[150x] " src="lesson1icon.jpg">
+                <p class="mt-4 text-center font-bold flex justify-center">Notes I</p>
             </div>
             <div id="I" style="display:none" class="flex flex justify-center gap-4 mt-4">
                 <a href="/lesson/lesson1/plan1" class="text-2xl bg-orange-600 rounded-2xl text-center text-white w-28 h-10 hover:ring-orange-400 hover:ring-4 h-16">
