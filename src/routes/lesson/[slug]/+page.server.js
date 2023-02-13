@@ -152,7 +152,7 @@ export const actions = {
     //   console.log(test)
 
       if(givenAnswer == test.answer){
-        console.log(num + 1)
+    //   console.log(num + 1)
         return { success: true, count: num, correct: cor + 1 };
       } else if(givenAnswer == test.options[0] || test.options[1] || test.options[2]){
         return { failure: true, count: num, correct: cor }
@@ -165,13 +165,15 @@ export const actions = {
     //   console.log(data)
 
       const num = parseInt(data.get('num'));
-      const cor = parseInt(data.get('cor')) 
+      const cor = parseInt(data.get('cor'));
       return {count: num + 1, correct: cor};
     },
     finish: async ({ request }) => {
       const data = await request.formData();
       
-      throw redirect (301, 'finish')
+      const num = parseInt(data.get('num'));
+      const cor = parseInt(data.get('cor'));
+      return {finish: true, count: num, correct: cor};
     }
     
 };
