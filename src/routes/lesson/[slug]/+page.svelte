@@ -28,7 +28,6 @@
 	}
 
 	shuffle(data[count].options);
-	console.log(count/100 * 50)
 </script>
 
 <html lang="">
