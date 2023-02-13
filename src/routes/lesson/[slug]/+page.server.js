@@ -14,7 +14,7 @@ const lessons = {
           ]
       },
       {
-        "question": "Select the quater note",
+        "question": "Select the quarter note",
         "answer": "𝅘𝅥",
         "options": [
             '𝅝',

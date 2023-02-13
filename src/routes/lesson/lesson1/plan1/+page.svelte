@@ -32,7 +32,7 @@
 			importance of notes in music to that of letters in languages. How would you be able to read this
 			if you didn’t know the letters, so let’s learn about notes.</p>
 	  </div>
-	  <p class="mb-20 text-2xl">In music notes are a type of notation that mark the duration of sound (tones) and tones represent the pitch. The notes have duration that is measured with beats</p>
+	  <p class="mb-20 text-2xl">In music notes are a type of notation that marks the duration of a sound (tones).They also have a duration that is measured in beats</p>
 	  <div class="flex flex-wrap -m-4">
 		<div class="xl:w-1/4 md:w-1/2 p-4">
 		  <div on:click={whole} class="bg-gray-100 p-6 rounded-lg h-72  w-[300px] hover:shadow-xl">
@@ -78,7 +78,7 @@
 		  </div>
 		</div>
 		<p class="  font-normal   text-gray-900  mt-4 text-[16,px]  ml-6   ">
-		     Notes are measured with beats. Now you will see how to
+			Notes are measured in beats. Now you will see how to
 			use some math with notes, <br />
 			Whole note(4b.) = half note(2b.) + half note(2 b.) <br /> Half note(2b.) = quarter note(1b.) +
 			quarter note (1b.) <br /> Quarter note(1b.) = eighth note(1/2b.) + eighth note(1/2b.) <br>
