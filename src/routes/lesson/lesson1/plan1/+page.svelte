@@ -13,7 +13,7 @@
 	  <p class="mb-20 text-2xl">In music notes are a type of notation that mark the duration of sound (tones) and tones represent the pitch. The notes have duration that is measured with beats</p>
 	  <div class="flex flex-wrap -m-4">
 		<div class="xl:w-1/4 md:w-1/2 p-4">
-		  <div class="bg-gray-100 p-6 rounded-lg">
+		  <div class="bg-gray-100 p-6 rounded-lg h-72   w-[300px]">
 			<img class="h-20 w-auto rounded ml-14  object-cover object-center  mb-6" src="https://music-guru.vercel.app/whole.webp " alt="content">
 			<h2 class="text-lg text-gray-900 font-medium title-font   ">Whole note</h2>
 			<h3 class="tracking-widest text-indigo-500 text-md font-medium title-font mb-4">4 beats</h3>
@@ -22,7 +22,7 @@
 		  </div>
 		</div>
 		<div class="xl:w-1/4 md:w-1/2 p-4">
-			<div class="bg-gray-100 p-6 rounded-lg">
+			<div class="bg-gray-100 p-6 rounded-lg h-72 w-[300px]">
 				<img class="h-20 w-auto rounded ml-14  object-cover object-center  mb-6" src="https://music-guru.vercel.app/half.webp " alt="content">
 				<h2 class="text-lg text-gray-900 font-medium title-font   ">Half note</h2>
 				<h3 class="tracking-widest text-indigo-500 text-md font-medium title-font mb-4">2 beats</h3>
@@ -30,7 +30,7 @@
 		  </div>
 		</div>
 		<div class="xl:w-1/4 md:w-1/2 p-4">
-		  <div class="bg-gray-100 p-6 rounded-lg">
+		  <div class="bg-gray-100 p-6 rounded-lg h-72 w-[300px]" >
 			<img class="h-20 w-auto rounded ml-14  object-cover object-center  mb-6" src="https://music-guru.vercel.app/quater.webp " alt="content">
 			<h2 class="text-lg text-gray-900 font-medium title-font   ">Quater note</h2>
 			<h3 class="tracking-widest text-indigo-500 text-md font-medium title-font mb-4">1 beat</h3>
@@ -38,7 +38,7 @@
 		  </div>
 		</div>
 		<div class="xl:w-1/4 md:w-1/2 p-4">
-		  <div class="bg-gray-100 p-6 rounded-lg">
+		  <div class="bg-gray-100 p-6 rounded-lg h-72 w-[300px]">
 			<img class="h-20 w-auto rounded ml-14  object-cover object-center  mb-6" src="https://music-guru.vercel.app/8th.webp " alt="content">
 			<h2 class="text-lg text-gray-900 font-medium title-font   ">Eighth note</h2>
 			<h3 class="tracking-widest text-indigo-500 text-md font-medium title-font mb-4">1/2 of a beat</h3>
@@ -48,14 +48,14 @@
 
 		</div>
 		<div class="xl:w-1/4 md:w-1/2 p-4">
-			<div class="bg-gray-100 p-6 rounded-lg">
+			<div class="bg-gray-100 p-6 rounded-lg h-72 w-[300px]">
 				<img class="h-20 w-auto rounded ml-14  object-cover object-center  mb-6" src="https://music-guru.vercel.app/32th.webp " alt="content">
 				<h2 class="text-lg text-gray-900 font-medium title-font   ">Sixteenth note</h2>
 				<h3 class="tracking-widest text-indigo-500 text-md font-medium title-font mb-4">1/4 of a beat</h3>
 			<p class="leading-relaxed text-base"> the Sixteenth note is a sixteenth of a whole note </p>
 		  </div>
 		</div>
-		<p class="  font-normal   text-gray-900  mt-4 text-[16,px]   ">
+		<p class="  font-normal   text-gray-900  mt-4 text-[16,px]  ml-6   ">
 		     Notes are measured with beats. Now you will see how to
 			use some math with notes, <br />
 			Whole note(4b.) = half note(2b.) + half note(2 b.) <br /> Half note(2b.) = quater note(1b.) +
