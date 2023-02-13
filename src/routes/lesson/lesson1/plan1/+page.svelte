@@ -1,3 +1,9 @@
+<script>
+    function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+	}
+</script>
 <section class="text-gray-600 body-font">
 	<div class="container px-5 py-24 mx-auto ">
 	  <div class="flex flex-wrap w-full mb-20 ">
@@ -13,7 +19,7 @@
 	  <p class="mb-20 text-2xl">In music notes are a type of notation that mark the duration of sound (tones) and tones represent the pitch. The notes have duration that is measured with beats</p>
 	  <div class="flex flex-wrap -m-4">
 		<div class="xl:w-1/4 md:w-1/2 p-4">
-		  <div class="bg-gray-100 p-6 rounded-lg h-72   w-[300px]">
+		  <div class="bg-gray-100 p-6 rounded-lg h-72  w-[300px] hover:shadow-xl">
 			<img class="h-20 w-auto rounded ml-14  object-cover object-center  mb-6" src="https://music-guru.vercel.app/whole.webp " alt="content">
 			<h2 class="text-lg text-gray-900 font-medium title-font   ">Whole note</h2>
 			<h3 class="tracking-widest text-indigo-500 text-md font-medium title-font mb-4">4 beats</h3>
@@ -22,7 +28,7 @@
 		  </div>
 		</div>
 		<div class="xl:w-1/4 md:w-1/2 p-4">
-			<div class="bg-gray-100 p-6 rounded-lg h-72 w-[300px]">
+			<div class="bg-gray-100 p-6 rounded-lg h-72 w-[300px] hover:shadow-xl">
 				<img class="h-20 w-auto rounded ml-14  object-cover object-center  mb-6" src="https://music-guru.vercel.app/half.webp " alt="content">
 				<h2 class="text-lg text-gray-900 font-medium title-font   ">Half note</h2>
 				<h3 class="tracking-widest text-indigo-500 text-md font-medium title-font mb-4">2 beats</h3>
@@ -30,7 +36,7 @@
 		  </div>
 		</div>
 		<div class="xl:w-1/4 md:w-1/2 p-4">
-		  <div class="bg-gray-100 p-6 rounded-lg h-72 w-[300px]" >
+		  <div class="bg-gray-100 p-6 rounded-lg h-72 w-[300px] hover:shadow-xl" >
 			<img class="h-20 w-auto rounded ml-14  object-cover object-center  mb-6" src="https://music-guru.vercel.app/quater.webp " alt="content">
 			<h2 class="text-lg text-gray-900 font-medium title-font   ">Quater note</h2>
 			<h3 class="tracking-widest text-indigo-500 text-md font-medium title-font mb-4">1 beat</h3>
@@ -38,7 +44,7 @@
 		  </div>
 		</div>
 		<div class="xl:w-1/4 md:w-1/2 p-4">
-		  <div class="bg-gray-100 p-6 rounded-lg h-72 w-[300px]">
+		  <div class="bg-gray-100 p-6 rounded-lg h-72 w-[300px] hover:shadow-xl">
 			<img class="h-20 w-auto rounded ml-14  object-cover object-center  mb-6" src="https://music-guru.vercel.app/8th.webp " alt="content">
 			<h2 class="text-lg text-gray-900 font-medium title-font   ">Eighth note</h2>
 			<h3 class="tracking-widest text-indigo-500 text-md font-medium title-font mb-4">1/2 of a beat</h3>
@@ -48,7 +54,7 @@
 
 		</div>
 		<div class="xl:w-1/4 md:w-1/2 p-4">
-			<div class="bg-gray-100 p-6 rounded-lg h-72 w-[300px]">
+			<div class="bg-gray-100 p-6 rounded-lg h-72 w-[300px] hover:shadow-xl">
 				<img class="h-20 w-auto rounded ml-14  object-cover object-center  mb-6" src="https://music-guru.vercel.app/32th.webp " alt="content">
 				<h2 class="text-lg text-gray-900 font-medium title-font   ">Sixteenth note</h2>
 				<h3 class="tracking-widest text-indigo-500 text-md font-medium title-font mb-4">1/4 of a beat</h3>
@@ -83,3 +89,8 @@
 	  </div>
 	
 </section>
+<audio id="whole" src=""></audio>
+<audio id="half" src=""></audio>
+<audio id="qarter" src=""></audio>
+<audio id="eighth" src=""></audio>
+<audio id="sixteenth" src=""></audio>
