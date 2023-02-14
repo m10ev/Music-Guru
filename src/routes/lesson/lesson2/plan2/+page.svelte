@@ -161,6 +161,15 @@
 			</p>
 		</div>
 	</div>
+	<div class="mb-16 flex justify-end">
+		<div class="w-[180px]">
+		<a href="https://music-guru.vercel.app/lessons" class="">
+			<div class="rounded-2xl border text-center bg-indigo-600 border-indigo-600">
+				<p class="p-5 text-white font-semibold">Go to lessons page</p>
+			</div>
+		</a>
+	    </div>
+	</div>
     <audio id="do" src="https://music-guru.vercel.app/audio/do.ogg"></audio>
     <audio id="re" src="https://music-guru.vercel.app/audio/re.ogg"></audio>
     <audio id="mi" src="https://music-guru.vercel.app/audio/mi.ogg"></audio>
