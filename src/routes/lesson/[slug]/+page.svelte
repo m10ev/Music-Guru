@@ -10,6 +10,10 @@
 	export let count = form ? form.count : 0;
 	let correct = form ? form.correct : 0;
 
+	function onSelect() {
+				document.getElementById('check').disabled = false;
+			}
+
 	function shuffle(array) {
 		let currentIndex = array.length,
 			randomIndex;
@@ -28,7 +32,6 @@
 	}
 
 	shuffle(data[count].options);
-	console.log(count/100 * 50)
 </script>
 
 <html lang="">
@@ -88,7 +91,7 @@
 					<div class="flex items-center">
 						<input
 							on:click={onSelect}
-							disabled={form?.success}
+							disabled={form?.success || form?.failure}
 							id="q1"
 							type="radio"
 							value={data[count].options[2]}
@@ -106,7 +109,7 @@
 					<div class="flex items-center">
 						<input
 							on:click={onSelect}
-							disabled={form?.success}
+							disabled={form?.success || form?.failure}
 							id="q2"
 							type="radio"
 							value={data[count].options[3]}
@@ -124,7 +127,7 @@
 					<div class="flex items-center">
 						<input
 							on:click={onSelect}
-							disabled={form?.success}
+							disabled={form?.success || form?.failure}
 							id="q3"
 							type="radio"
 							value={data[count].options[1]}
@@ -142,7 +145,7 @@
 					<div class="flex items-center">
 						<input
 							on:click={onSelect}
-							disabled={form?.success}
+							disabled={form?.success || form?.failure}
 							id="q4"
 							type="radio"
 							value={data[count].options[0]}
@@ -215,9 +218,6 @@
 		</form>
 
 		<script>
-			function onSelect() {
-				document.getElementById('check').disabled = false;
-			}
 		</script>
 	</body>
 </html>
