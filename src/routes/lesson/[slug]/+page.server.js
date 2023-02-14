@@ -126,10 +126,76 @@ const lessons = {
   ],
   "test2": [
       {
-          "question": "",
-          "answer": "",
-          "options": []
-      }
+        "question": "What note is a whole step above A (la)",
+        "answer": "B (si)",
+        "options": ['G (sol)', 'C (do)', 'D (re)', 'B (si)']
+      },
+      {
+        "question": "What note is a half step above E (mi)",
+        "answer": "F (fa)",
+        "options": ['B(si)', 'A(la)', 'G(sol)', 'F (fa)']
+      },
+      {
+        "question": "What note is a whole step above D (re)",
+        "answer": "E (mi)",
+        "options": ['C(do)', 'F(fa)', 'B(si)', 'E (mi)']
+      },
+      {
+        "question": "What note is a whole step above F (fa)",
+        "answer": "G (sol)",
+        "options": ['B (si)', 'A (la)', 'D(re)', 'G (sol)']
+      },
+      {
+        "question": "What note is a half step above B (si)",
+        "answer": "C (do)",
+        "options": ['D (re)', 'F (fa)', 'E (mi)', 'C (do)']
+      },
+      {
+        "question": "What note is a half step down F (fa)",
+        "answer": "E (mi)",
+        "options": ['B (si)', 'A (la)', 'D (re)', 'E (mi)']
+      },
+      {
+        "question": "What note is a whole step above G (sol)",
+        "answer": "A (la)",
+        "options": ['B (si)', 'C (do)', 'D (re)', 'A (la)']
+      },
+      {
+        "question": "What note is a whole step above C (do)",
+        "answer": "D (re)",
+        "options": ['E (mi)', 'A (la)', 'B(si)', 'D (re)']
+      },
+      {
+        "question": "What note is a whole step down A (la)",
+        "answer": "G (sol)",
+        "options": ['B (si)', 'C (do)', 'D (re)', 'G (sol)']
+      },
+      {
+        "question": "What note is a whole step down G (sol)",
+        "answer": "F (fa)",
+        "options": ['B (si)', 'C (do)', 'D (re)', 'F (fa)']
+      },
+      {
+        "question": "What note is a whole step down B (si)",
+        "answer": "A (la)",
+        "options": ['D (re)', 'F (fa)', 'E (mi)', 'A (la)']
+      },
+      {
+        "question": "What note is a whole step down D (re)",
+        "answer": "C (do)",
+        "options": ['E (mi)', 'F (fa)', 'B (si)', 'C (do)']
+      },
+      {
+        "question": "What note is a half step down C (do)",
+        "answer": "B (si)",
+        "options": ['E (mi)', 'A (la)', 'D (re)', 'B (si)']
+      },
+      {
+        "question": "What note is a whole step down E (mi)",
+        "answer": "D (re)",
+        "options": ['B (si)', 'A (la)', 'G (sol)', 'D (re)']
+      },
+
   ]
 }
 
