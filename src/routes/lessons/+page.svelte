@@ -9,7 +9,7 @@
             <h1 class="text-6xl text-center font-bold">Notes and Tones</h1>
             <div on:click={showI}>
                 <a href="" class="relative block -m-6 p-6 rounded-lg">
-                <img class="mt-4 ml-40 justify-center flex w-[150px] h-[150x] " src="lesson1icon.jpg">
+                <img class="mt-4 ml-40 justify-center flex w-[150px] h-[150x] " src="lesson1icon.webp">
                 <p class="mt-4 text-center font-bold flex justify-center">Notes I</p>
             </div>
             <div id="I" style="display:none" class="flex flex justify-center gap-4 mt-4">
