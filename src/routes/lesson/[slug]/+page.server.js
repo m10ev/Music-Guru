@@ -133,7 +133,7 @@ const lessons = {
       {
         "question": "What note is a half step above E (mi)",
         "answer": "F (fa)",
-        "options": ['B(si)', 'A(la)', 'G(sol)', 'F (fa)']
+        "options": ['B (si)', 'A (la)', 'G (sol)', 'F (fa)']
       },
       {
         "question": "What note is a whole step above D (re)",

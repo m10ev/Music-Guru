@@ -5,6 +5,7 @@
 	}
 	function half() {
 		var audio = document.getElementById('halfNote');
+		let Lastaudio = audio
 		audio.play();
 	}
 	function quarter() {

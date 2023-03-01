@@ -48,12 +48,12 @@
 					A musical tone is characterized by it's
 				</p>
 				<p class="text-start">
-					- duration <br />-pitch <br />-timbre (the unique sound of each instrument or voice)
-					<br />-intencity (loudnes)
+					- duration <br />- pitch <br />- timbre (the unique sound of each instrument or voice)
+					<br />- intencity (loudnes)
 				</p>
 			</div>
 			<h1 class="text-3xl mt-4 text-gray-900   ">Main tones written with notes</h1>
-			<p class=" text-blue-600 text-lg">Do (C) Re (D) Mi (E) Fa (F) Sol (G) La (A) Si (B)</p>
+			<p class=" text-blue-600 text-lg">C (Do) D (Re) E (Mi) F (Fa) G (Sol) A (La) B (Si)</p>
 		</div>
 		<div class="container px-5 py-10  mx-auto">
 			<div class="flex flex-wrap -m-4">
@@ -66,7 +66,7 @@
 						/>
                     </div>
 					<div class="mt-4">
-						<h2 class="text-gray-900 title-font text-lg font-medium">Do (C)</h2>
+						<h2 class="text-gray-900 title-font text-lg font-medium">C (Do)</h2>
 					</div>
 				</div>
 				<div class="lg:w-1/4 md:w-1/2 p-4 w-full hover:shadow-xl" on:click={re}>
@@ -78,7 +78,7 @@
 						/>
                     </div>
 					<div class="mt-4">
-						<h2 class="text-gray-900 title-font text-lg font-medium">Re (D)</h2>
+						<h2 class="text-gray-900 title-font text-lg font-medium">D (Re)</h2>
 					</div>
 				</div>
 				<div class="lg:w-1/4 md:w-1/2 p-4 w-full hover:shadow-xl" on:click={mi}>
@@ -90,7 +90,7 @@
 						/>
                     </div>
 					<div class="mt-4">
-						<h2 class="text-gray-900 title-font text-lg font-medium">Mi (E)</h2>
+						<h2 class="text-gray-900 title-font text-lg font-medium">E (Mi)</h2>
 					</div>
 				</div>
 				<div class="lg:w-1/4 md:w-1/2 p-4 w-full hover:shadow-xl" on:click={fa}>
@@ -102,7 +102,7 @@
 						/>
                     </div>
 					<div class="mt-4">
-						<h2 class="text-gray-900 title-font text-lg font-medium">Fa (F)</h2>
+						<h2 class="text-gray-900 title-font text-lg font-medium">F (Fa)</h2>
 					</div>
 				</div>
 				<div class="lg:w-1/4 md:w-1/2 p-4 w-full hover:shadow-xl" on:click={sol}>
@@ -114,7 +114,7 @@
 						/>
                     </div>
 					<div class="mt-4">
-						<h2 class="text-gray-900 title-font text-lg font-medium">Sol (G)</h2>
+						<h2 class="text-gray-900 title-font text-lg font-medium">G (Sol)</h2>
 					</div>
 				</div>
 				<div class="lg:w-1/4 md:w-1/2 p-4 w-full hover:shadow-xl" on:click={la}>
@@ -126,7 +126,7 @@
 						/>
                     </div>
 					<div class="mt-4">
-						<h2 class="text-gray-900 title-font text-lg font-medium">La (A)</h2>
+						<h2 class="text-gray-900 title-font text-lg font-medium">A (La)</h2>
 					</div>
 				</div>
 				<div class="lg:w-1/4 md:w-1/2 p-4 w-full hover:shadow-xl" on:click={si}>
@@ -138,7 +138,7 @@
 						/>
                     </div>
 					<div class="mt-4 justify-end">
-						<h2 class="text-gray-900 title-font text-lg font-medium">Si (B/H)</h2>
+						<h2 class="text-gray-900 title-font text-lg font-medium">B/H (Si)</h2>
 					</div>
 				</div>
 			</div>
@@ -150,14 +150,14 @@
 			half-step apart. Two half steps equal one whole step the tones G and A, A and B, C and E are
 			one whole step apart !
 		</p>
-		<p>Do--Re--Mi-Fa--Sol--La--Si-Do * - semitone</p>
+		<p>C (Do)--D (Re)--E (Mi)-F (Fa)--G (Sol)--A (La)--B (Si)-C (Do) * - semitone</p>
 		<div class="h-1 w-full bg-indigo-500 mt-6" />
 		<div>
 			<p class="text-center mt-3 font-semibold ">New Words</p>
 			<p>
 				Tone - a constant sound with certain frequency of oscillations;<br />
 			    Step - distance between tones,notes;<br />
-				Timbre- the unique sound of each instrument or voice;
+				Timbre - the unique sound of each instrument or voice;
 			</p>
 		</div>
 	</div>
