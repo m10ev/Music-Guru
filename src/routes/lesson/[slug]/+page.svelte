@@ -31,11 +31,11 @@
 		return array;
 	}
 
-	shuffle(data[count].options);
+	shuffle(data.questions[count].options);
 </script>
 
-<html lang="">
-	<body class="max-w-6xl mx-auto">
+<main lang="">
+	<div class="max-w-6xl mx-auto">
 		<form method="POST" action="?/check">
 			{#if form?.finish}
 				{#if correct == count + 1}
@@ -78,14 +78,14 @@
 			{:else}
 			<div class="flex justify-center mt-12">
 				<h1 class=" text-6xl text-center font-semibold">
-					{data[count].question}
+					{data.questions[count].question}
 				</h1>
 			</div>
 			<!--debug--> 
 			<input type="number" style="display: none;" bind:value={count} name="num" />
 			<input type="number" style="display: none;" bind:value={correct} name="cor" />
-			<p style="display: none;">{count < Object.keys(data).length - 1}</p>
-			<p style="display: none;">data:{Object.keys(data).length}</p>
+			<p style="display: none;">{count < data.questions.length - 1}</p>
+			<p style="display: none;">data:{data.questions.length}</p>
 			<ul class="mt-12 grid grid-cols-2 gap-4 justify-center items-center" id="ull">
 				<li>
 					<div class="flex items-center">
@@ -94,14 +94,14 @@
 							disabled={form?.success || form?.failure}
 							id="q1"
 							type="radio"
-							value={data[count].options[2]}
+							value={data.questions[count].options[2]}
 							name="question"
 							class="hidden peer required"
 						/>
 						<label
 							for="q1"
 							class="w-full border-2 ring-4 ring-transparent border-transparent bg-clip-border bg-sky-400 rounded-md h-12 hover:ring-sky-200 hover:outline-none peer-checked:ring-sky-200 text-center text-4xl text-white"
-							>{data[count].options[2]}</label
+							>{data.questions[count].options[2]}</label
 						>
 					</div>
 				</li>
@@ -112,14 +112,14 @@
 							disabled={form?.success || form?.failure}
 							id="q2"
 							type="radio"
-							value={data[count].options[3]}
+							value={data.questions[count].options[3]}
 							name="question"
 							class="hidden peer required"
 						/>
 						<label
 							for="q2"
 							class=" w-full border-2 ring-4 ring-transparent border-transparent bg-clip-border bg-sky-400 rounded-md h-12 hover:ring-sky-200 hover:outline-none peer-checked:ring-sky-200 text-center text-4xl text-white"
-							>{data[count].options[3]}</label
+							>{data.questions[count].options[3]}</label
 						>
 					</div>
 				</li>
@@ -130,14 +130,14 @@
 							disabled={form?.success || form?.failure}
 							id="q3"
 							type="radio"
-							value={data[count].options[1]}
+							value={data.questions[count].options[1]}
 							name="question"
 							class="hidden peer required"
 						/>
 						<label
 							for="q3"
 							class="w-full border-2 ring-4 ring-transparent border-transparent bg-clip-border bg-sky-400 rounded-md h-12 hover:ring-sky-200 hover:outline-none peer-checked:ring-sky-200 text-center text-4xl text-white"
-							>{data[count].options[1]}</label
+							>{data.questions[count].options[1]}</label
 						>
 					</div>
 				</li>
@@ -148,14 +148,14 @@
 							disabled={form?.success || form?.failure}
 							id="q4"
 							type="radio"
-							value={data[count].options[0]}
+							value={data.questions[count].options[0]}
 							name="question"
 							class="hidden peer required"
 						/>
 						<label
 							for="q4"
 							class="w-full border-2 ring-4 ring-transparent border-transparent bg-clip-border bg-sky-400 rounded-md h-12 hover:ring-sky-200 hover:outline-none peer-checked:ring-sky-200 text-center text-4xl text-white"
-							>{data[count].options[0]}</label
+							>{data.questions[count].options[0]}</label
 						>
 					</div>
 				</li>
@@ -176,7 +176,7 @@
 					<p class="text-4xl text-white flex items-center justify-center mb-6">
 						Correct! You are doing great.
 					</p>
-					{#if count < Object.keys(data).length - 1}
+					{#if count < data.questions.length - 1}
 						<button
 							id="nxt"
 							formaction="?/next"
@@ -194,9 +194,9 @@
 			{:else if form?.failure}
 				<div id="dispW" class="justify-center flex mt-6 p-4 shadow rounded-lg w-full bg-red-400">
 					<p class="text-4xl text-white flex items-center justify-center mb-6">
-						Wrong. The answer is {data[count].answer}. Better luck next time.
+						Wrong. The answer is {data.questions[count].answer}. Better luck next time.
 					</p>
-					{#if count < Object.keys(data).length - 1}
+					{#if count < data.questions.length - 1}
 						<button
 							id="nxt"
 							formaction="?/next"
@@ -219,5 +219,5 @@
 
 		<script>
 		</script>
-	</body>
-</html>
+	</div>
+</main>

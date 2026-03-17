@@ -6,7 +6,7 @@
         document.getElementById('b').style.display=""
     }
 </script>
-<html>
+<main>
     <div class="flex mt-12 overflow-hidden justify-center">
         <div class="p-6">
             <h1 class="text-6xl text-center font-bold">Notes and Tones</h1>
@@ -36,4 +36,4 @@
             </div>
         </div>
     </div>
-</html>
+</main>

@@ -1,7 +1,6 @@
-<html class="">
-  <div class="justify-center w-full space-y-6r ">
+<main class="">
+  <div class="justify-center w-full space-y-6">
     <h1 class="text-center font-bold text-7xl">What is Music Guru?</h1>
-    <p class="flex text-center text-2xl md:font-extralight">Music Guru is a web app that makes learning music theory easy. By taking short lessons and doing fun quizzes, you can improve your knowledge of Music Theory while having fun.</p>    
+    <p class="mx-auto text-center text-2xl md:font-extralight">Music Guru is a web app that makes learning music theory easy. By taking short lessons and doing fun quizzes, you can improve your knowledge of Music Theory while having fun.</p>    
   </div>
-</html>
-
+</main>

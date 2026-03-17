@@ -1,5 +1,4 @@
-import { error, redirect } from '@sveltejs/kit'; 
-import { less } from 'svelte-preprocess';
+import { error, redirect } from '@sveltejs/kit';
 
 const lessons = {
   "test1": [
@@ -202,8 +201,7 @@ const lessons = {
 /** @type {import('./$types').PageLoad} */
 export function load({ params }) {
     if (lessons[params.slug] === undefined) throw error(404, 'Not found');
-
-    return lessons[params.slug];
+    return { questions: lessons[params.slug] };
 }
 /** @type {import('./$types').Actions} */
 export const actions = {

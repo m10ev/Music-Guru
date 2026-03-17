@@ -1,5 +1,5 @@
 <!-- NOT WORKING!!! -->
-<html class="">
+<main class="">
   <div class="space-y-3 md:text-center md:font-sans">
     <h1 class="font-bold md:text-7xl">Music Guru</h1>
     <p class="text-2xl md:font-extralight">Learn music theory the easy way</p>
@@ -31,4 +31,4 @@
       </div>
     </form>
   </div>
-</html>
+</main>
