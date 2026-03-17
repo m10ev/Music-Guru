@@ -6,8 +6,14 @@
 		<meta name="viewport" content="width=device-width" />
 		<title>Music Guru</title>
 		%sveltekit.head%
+		<script>
+			const theme = localStorage.getItem('theme');
+			if (theme === 'dark' || (!theme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+				document.documentElement.classList.add('dark');
+			}
+		</script>
 	</head>
-	<body>
+	<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
 		<div>%sveltekit.body%</div>
 	</body>
 </html>
