@@ -1,5 +1,10 @@
 import { error, redirect } from '@sveltejs/kit';
 
+/**
+ * @typedef {{ question: string, answer: string, options: (string|number)[] }} Question
+ */
+
+/** @type {Record<string, Question[]>} */
 const lessons = {
   "test1": [
       {
@@ -14,12 +19,12 @@ const lessons = {
       },
       {
         "question": "Select the quarter note",
-        "answer": "𝅘𝅥",
+        "answer": "𝅘𝅥",
         "options": [
             '𝅝',
-            '𝅘𝅥𝅮',
-            '𝅗𝅥',
-            '𝅘𝅥'
+            '𝅘𝅥𝅮',
+            '𝅗𝅥',
+            '𝅘𝅥'
         ]
       },
       {
@@ -54,12 +59,12 @@ const lessons = {
       },
       {
         "question": "Select the eighth note",
-        "answer": "𝅘𝅥𝅮",
+        "answer": "𝅘𝅥𝅮",
         "options": [
             '𝅝',
-            '𝅘𝅥',
-            '𝅘𝅥𝅯',
-            "𝅘𝅥𝅮"
+            '𝅘𝅥',
+            '𝅘𝅥𝅯',
+            "𝅘𝅥𝅮"
         ]
       },
       {
@@ -84,12 +89,12 @@ const lessons = {
       },
       {
         "question": "Select the sixteenth note",
-        "answer": "𝅘𝅥𝅯",
+        "answer": "𝅘𝅥𝅯",
         "options": [
-            '𝅘𝅥𝅮',
-            '𝅘𝅥',
-            '𝅗𝅥',
-            '𝅘𝅥𝅯'
+            '𝅘𝅥𝅮',
+            '𝅘𝅥',
+            '𝅗𝅥',
+            '𝅘𝅥𝅯'
         ]
       },
       {
@@ -198,46 +203,72 @@ const lessons = {
   ]
 }
 
-/** @type {import('./$types').PageLoad} */
+/** @type {import('./$types').PageServerLoad} */
 export function load({ params }) {
     if (lessons[params.slug] === undefined) throw error(404, 'Not found');
     return { questions: lessons[params.slug] };
 }
+
 /** @type {import('./$types').Actions} */
 export const actions = {
-    check: async ({ request, params }) => { 
+    check: async ({ request, params }) => {
       const data = await request.formData();
-    //   console.log(data)
-      
-      const givenAnswer = data.get('question');
-      const num = parseInt(data.get('num'));
-      const cor = parseInt(data.get('cor'));
-      const test = lessons[params.slug][num]
-    //   console.log(test)
 
-      if(givenAnswer == test.answer){
-    //   console.log(num + 1)
-        return { success: true, count: num, correct: cor + 1 };
-      } else if(givenAnswer == test.options[0] || test.options[1] || test.options[2]){
-        return { failure: true, count: num, correct: cor }
-      }else{
-        return { noSelection: true}
+      const givenAnswerRaw = data.get('question');
+      const numRaw = data.get('num');
+      const corRaw = data.get('cor');
+
+      const num = parseInt(String(numRaw ?? ''), 10);
+      const cor = parseInt(String(corRaw ?? ''), 10);
+      const safeNum = Number.isInteger(num) ? num : 0;
+      const safeCor = Number.isInteger(cor) ? cor : 0;
+
+      const test = lessons[params.slug]?.[safeNum];
+
+      // Defensive guard: if the question index is invalid, fail safely
+      // instead of throwing on test.answer. Also surfaces what was
+      // actually submitted, to make this easy to debug.
+      if (test === undefined) {
+        return {
+          noSelection: true,
+          count: safeNum,
+          correct: safeCor,
+          debug: { numRaw, corRaw, givenAnswerRaw, slug: params.slug }
+        };
+      }
+
+      if (givenAnswerRaw === null) {
+        // No radio option was selected.
+        return { noSelection: true, count: safeNum, correct: safeCor };
+      }
+
+      if (givenAnswerRaw == test.answer) {
+        return { success: true, count: safeNum, correct: safeCor + 1 };
+      } else if (test.options.map(String).includes(String(givenAnswerRaw))) {
+        return { failure: true, count: safeNum, correct: safeCor };
+      } else {
+        return { noSelection: true, count: safeNum, correct: safeCor };
       }
     },
-    next: async ({ request }) => { 
+    next: async ({ request }) => {
       const data = await request.formData();
-    //   console.log(data)
 
-      const num = parseInt(data.get('num'));
-      const cor = parseInt(data.get('cor'));
-      return {count: num + 1, correct: cor};
+      const num = parseInt(String(data.get('num') ?? ''), 10);
+      const cor = parseInt(String(data.get('cor') ?? ''), 10);
+      return {
+        count: Number.isInteger(num) ? num + 1 : 1,
+        correct: Number.isInteger(cor) ? cor : 0
+      };
     },
     finish: async ({ request }) => {
       const data = await request.formData();
-      
-      const num = parseInt(data.get('num'));
-      const cor = parseInt(data.get('cor'));
-      return {finish: true, count: num, correct: cor};
+
+      const num = parseInt(String(data.get('num') ?? ''), 10);
+      const cor = parseInt(String(data.get('cor') ?? ''), 10);
+      return {
+        finish: true,
+        count: Number.isInteger(num) ? num : 0,
+        correct: Number.isInteger(cor) ? cor : 0
+      };
     }
-    
 };
