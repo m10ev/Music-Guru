@@ -200,6 +200,73 @@ const lessons = {
         "options": ['B (si)', 'A (la)', 'G (sol)', 'D (re)']
       },
 
+  ],
+  "test3": [
+      {
+          "question": "In a time signature, what does the top number tell you?",
+          "answer": "How many beats are in each measure",
+          "options": [
+              "Which note value equals one beat",
+              "How many beats are in each measure",
+              "The tempo of the piece",
+              "The key of the piece"
+          ]
+      },
+      {
+          "question": "In a time signature, what does the bottom number tell you?",
+          "answer": "Which note value equals one beat",
+          "options": [
+              "How many beats are in each measure",
+              "Which note value equals one beat",
+              "How loud to play",
+              "How many measures are in the piece"
+          ]
+      },
+      {
+          "question": "How many beats are in one measure of 4/4 time?",
+          "answer": "4",
+          "options": [2, 3, 4, 6]
+      },
+      {
+          "question": "In 4/4 time, which note value equals one beat?",
+          "answer": "Quarter note",
+          "options": ["Whole note", "Half note", "Quarter note", "Eighth note"]
+      },
+      {
+          "question": "How many beats are in one measure of 3/4 time?",
+          "answer": "3",
+          "options": [2, 3, 4, 6]
+      },
+      {
+          "question": "What is another name for 4/4 time?",
+          "answer": "Common time",
+          "options": ["Waltz time", "March time", "Common time", "Compound time"]
+      },
+      {
+          "question": "How many beats are in one measure of 2/4 time?",
+          "answer": "2",
+          "options": [2, 3, 4, 6]
+      },
+      {
+          "question": "In 6/8 time, which note value equals one beat?",
+          "answer": "Eighth note",
+          "options": ["Whole note", "Half note", "Quarter note", "Eighth note"]
+      },
+      {
+          "question": "What is a vertical line that marks the end of a measure called?",
+          "answer": "Bar line",
+          "options": ["Time signature", "Bar line", "Staff line", "Beam"]
+      },
+      {
+          "question": "Which combination correctly fills one measure of 4/4 time?",
+          "answer": "Half note + Quarter note + Quarter note",
+          "options": [
+              "Half note + Quarter note + Quarter note",
+              "Whole note + Quarter note",
+              "Half note + Half note + Half note",
+              "Quarter note + Quarter note"
+          ]
+      }
   ]
 }
 

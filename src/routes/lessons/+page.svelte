@@ -9,16 +9,23 @@
         {
             id: 'a',
             title: 'Notes I',
-            icon: 'lesson1icon.webp',
+            icon: 'lesson1icon.svg',
             lessonHref: '/lesson/lesson1/plan1',
             testHref: '/lesson/test1'
         },
         {
             id: 'b',
             title: 'Tones I',
-            icon: 'lesson2icon.webp',
+            icon: 'lesson2icon.svg',
             lessonHref: '/lesson/lesson2/plan2',
             testHref: '/lesson/test2'
+        },
+        {
+            id: 'c',
+            title: 'Time Signatures I',
+            icon: 'lesson3icon.svg',
+            lessonHref: '/lesson/lesson3/plan3',
+            testHref: '/lesson/test3'
         }
     ];
 </script>
