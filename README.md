@@ -61,21 +61,13 @@ Preview the production build locally:
 npm run preview
 ```
 
-### Testing
-
-Run the end-to-end test suite (Playwright):
-
-```bash
-npx playwright test
-```
-
 ## Project Structure
 
 ```
 Music-Guru/
 ├── src/          # Application source (routes, components, logic)
 ├── static/       # Static assets
-├── tests/        # Playwright end-to-end tests
+├── tests/
 ├── tailwind.config.cjs
 ├── svelte.config.js
 ├── vite.config.js
