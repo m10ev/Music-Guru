@@ -11,7 +11,7 @@
             </div>
         </a>
 
-        <a href="https://github.com/saliayvaz" target="_blank" rel="noopener noreferrer" aria-label="Sali Ayvaz's GitHub profile">
+        <a href="https://github.com/Sali-Ayvaz" target="_blank" rel="noopener noreferrer" aria-label="Sali Ayvaz's GitHub profile">
             <div class="flex flex-col items-center gap-3 p-8 rounded-2xl bg-gray-100 dark:bg-gray-800 shadow-xl hover:shadow-indigo-500/40 hover:-translate-y-1 transition-all duration-300">
                 <img class="w-24 h-24 rounded-full ring-4 ring-indigo-500" src="prof1.png" alt="Sali Ayvaz"/>
                 <h2 class="text-xl font-semibold text-indigo-600">Sali Ayvaz</h2>
