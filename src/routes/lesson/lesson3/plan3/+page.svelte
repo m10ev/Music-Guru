@@ -32,7 +32,7 @@
 		<h1 class="text-5xl font-bold text-gray-900 dark:text-white mb-4">
 			Lesson 3. Time Signatures and Measures
 		</h1>
-		<div class="h-1 w-28 bg-indigo-500 rounded mx-auto mb-6" />
+		<div class="h-1 w-28 bg-indigo-500 rounded mx-auto mb-6"></div>
 		<p class="max-w-2xl mx-auto text-gray-500 dark:text-gray-300 leading-relaxed">
 			Welcome back, our friend. Now that you know about notes and tones, it's time to learn how
 			music organizes them in time. Every piece of music is divided into small chunks called

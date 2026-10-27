@@ -1,10 +1,6 @@
 <script>
-	/** @type {import('./$types').PageData} */
-	export let data;
+    /** @type {{ data: import('./$types').PageData }} */
+    let { data } = $props();
 
-	/** @type {import('./$types').ActionData} */
-	export let form;
-
-    let correct = form ? form.correct : 0;
+    // If you were just using form for something else, remove it or adapt it
 </script>
-<h1>{correct}</h1>

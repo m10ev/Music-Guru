@@ -76,7 +76,7 @@
 		{#if form?.finish}
 			<div class="text-center mb-12">
 				<h1 class="text-5xl font-bold text-gray-900 dark:text-white mb-4">Test Score</h1>
-				<div class="h-1 w-28 bg-indigo-500 rounded mx-auto mb-6" />
+				<div class="h-1 w-28 bg-indigo-500 rounded mx-auto mb-6"></div>
 			</div>
 
 			<div class="max-w-md mx-auto rounded-2xl bg-gray-50 dark:bg-gray-800 shadow-md transition-all duration-300 p-8 flex flex-col items-center border border-gray-100 dark:border-gray-700/50 {feedback.shadow}">
